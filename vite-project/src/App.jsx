@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes, Navigate } from 'react-router-dom';
-import './App.css';
+import '../src/styles/home.css';
 
 // Import the Home component from the specified location
 import Home from '../src/pages/home';
@@ -16,7 +16,7 @@ function App() {
           <Route path="/services" element={<OurServices />} />
           <Route path="/location" element={<Location />} />
           <Route path="/" element={<Home />} />
-          <Route path="*" element={<Navigate to="/" />} /> {/* Redirect to Home when no matching route */}
+          <Route path="*" element={<Navigate to="/" />} /> 
         </Routes>
       </div>
     </Router>

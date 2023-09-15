@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+
+.header{
+     position:fixed;
+     top:0;
+     left:0;
+     width: 100%;
+     padding: 20px 100px;
+     display: flex;
+     justify-content:  space-between;
+     align-items: center;
+     z-index: 100;
+}
+
+.navbar a{
+    position: relative;
+    font-size:  18px ;
+    font-family: 'Manrope', sans-serif;
+    color: #000;
+     font-weight: 800;
+     text-decoration: none;
+     margin-left: 40px;
+
+}
+
+.navbar a::before{
+    content:'';
+    position: absolute;
+    top:100%;
+    width:0;
+    height: 2px;
+    background: #000;
+    transition: .3s;
+
+}
+.navbar a:hover::before{
+   width: 100%;
+
+}
+
+@media (max-width: 958px) {
+    .header {
+        padding: 20px;
+    }
+    
+    .navbar {
+        display: none; /* Hide the navbar */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: #fff; /* Add background for mobile menu */
+        position: absolute;
+        top: 60px; /* Adjust the top position based on your header height */
+        left: 0;
+        width: 100%;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        transform: translateY(-100%); /* Initially off-screen */
+        z-index: 99;
+    }
+
+    .navbar.open {
+        transform: translateY(0); /* Slide in when the mobile menu is open */
+    }
+
+    .navbar a {
+        margin: 10px 0; /* Adjust the spacing between mobile menu items */
+    }
+    
+    /* Style for the mobile menu button */
+    .mobile-menu-button {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+    
+    .bar.open:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .bar.open:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .bar.open:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+
+
+
+

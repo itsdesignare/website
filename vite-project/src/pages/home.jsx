@@ -1,8 +1,15 @@
 import React from 'react'
-import './home.css'
+import '../styles/home.css'
+import Navbar from '../components/navbar'
+import { Hero } from '../components/hero'
+import { Reasons } from '../components/reasons'
 const home = () => {
   return (
-    <div>home</div>
+    <div>
+        <Navbar />
+        <Hero />
+        {/* <Reasons/> */}
+    </div>
   )
 }
 
