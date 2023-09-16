@@ -4,6 +4,7 @@ import Navbar from '../components/navbar'
 import { Hero } from '../components/hero'
 import { Reasons } from '../components/reasons'
 import { Ourgoal } from '../components/ourgoal'
+import { Ourcommmit } from '../components/ourcommit'
 
 const home = () => {
   return (
@@ -12,6 +13,7 @@ const home = () => {
         <Hero />
         <Reasons/>
         <Ourgoal />
+        <Ourcommmit />
     </div>
   )
 }

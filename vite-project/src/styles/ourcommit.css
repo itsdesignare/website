@@ -1,0 +1,101 @@
+.heading-ourcommit{
+    position:absolute;
+    top:160rem;
+    left: 10rem;
+    color: #000;
+font-family: Manrope;
+font-size: 75px;
+font-style: normal;
+font-weight: 800;
+line-height: 84.6%; /* 40.608px */
+letter-spacing: -1.68px;
+}
+
+.para-ourcommit{
+    position:absolute;
+    top:170rem;
+    left: 10rem;
+color: #000;
+font-family: Manrope;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: 147.1%; /* 23.536px */
+letter-spacing: -0.24px;
+width: 650px;}
+
+.para-ourcommit span{
+    color: #FFF619;
+
+}
+
+.image-wrapper-ourcommit{
+    position:absolute;
+    top:156rem;
+    left: 60rem;
+}
+.image-wrapper-ourcommit img{
+    width: 450px;
+    height: 450px;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+   
+.heading-ourcommit{
+    position: relative;
+    top: 230rem;
+    left:0rem;
+    font-size: 60px;
+    text-align: center;
+}
+.para-ourcommit{
+    position: relative;
+    top: 255rem;
+    left: 1.5rem;
+text-align: center;
+    width: 350px;
+    }
+    .image-wrapper-ourcommit{
+        position:absolute;
+        top:240rem;
+        left: 1rem;
+    }
+    .image-wrapper-ourcommit img{
+        width: 350px;
+        height: 350px;
+    }
+
+
+
+}
+    
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1204px) {
+       
+        .heading-ourcommit{
+            position: relative;
+            top: 200rem;
+            left:2rem;
+            font-size: 75px;
+            text-align: center;
+        }
+        .para-ourcommit{
+            position: relative;
+            top: 235rem;
+            left: 10rem;
+        text-align: center;
+            width: 500px;
+            }
+            .image-wrapper-ourcommit{
+                position:absolute;
+                top:210rem;
+                left: 10rem;
+            }
+            .image-wrapper-ourcommit img{
+                width: 500px;
+                height: 500px;
+            }
+        
+        }
