@@ -62,15 +62,101 @@ background: #D9D9D9;
     }
 
     .card-2 {
-        display: flex;
-        width: 300px;
-        height: 400px;
-        padding: 50px 50px 50px 25px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 6px;
-        flex-shrink: 0;
-        border-radius: 23px;
-        background: #D9D9D9;
+display: flex;
+width: 300px;
+height: 400px;
+padding: 50px 50px 50px 25px;
+flex-direction: column;
+align-items: flex-start;
+gap: 6px;
+flex-shrink: 0;
+border-radius: 23px;
+background: #D9D9D9;
         
         }
+
+
+.card-heading{
+width: 136px;
+color: #000;
+font-family: Manrope;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: 90.6%; /* 18.12px */
+
+    }
+
+.line {
+width: 45px;
+flex-shrink: 0;
+stroke-width: 2rem;
+stroke: #000;
+}
+
+.card-paragraph{
+color: #000;
+font-family: Manrope;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 129.6%; /* 12.96px */
+letter-spacing: -0.55px;
+}
+
+
+@media only screen and (max-width: 768px) {
+.heading-text-reasons{
+position: absolute;
+top:52rem;
+left: .8rem;
+font-size: 50px;
+}
+
+.heading-text-reasons span{
+font-size:50px;    
+}
+
+.card-wrapper {
+    position: absolute;
+    top: 65rem;
+    left: 3rem;
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    gap: 5rem; /* Add a gap of 10rem between cards */
+}
+
+
+
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1204px) {
+    .heading-text-reasons{
+    position: absolute;
+    top:52rem;
+    left: 12rem;
+    font-size: 50px;
+    }
+    
+    .heading-text-reasons span{
+    font-size:50px;    
+    }
+    
+    .card-wrapper {
+        position: absolute;
+        top: 65rem;
+        left: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row; /* Stack cards vertically */
+        gap: 5rem; /* Add a gap of 10rem between cards */
+    }
+    
+    .card-2{
+        margin-left: 12.4rem;
+    }
+    
+    
+    
+    }
